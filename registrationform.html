@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Login and Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="title-text">
+			<div class="title login">
+				Login Form
+			</div>
+			<div class="title signup">
+				Register Here!
+			</div>
+		</div>
+		<div class="form-container">
+			<div class="slide-controls">
+				<input type="radio" name="slide" id="login" checked>
+				<input type="radio" name="slide" id="signup">
+				<label for="login" class="slide login">Login</label>
+				<label for="signup" class="slide signup">Register</label>
+				<div class="slider-tab"></div>
+			</div>
+			<div class="form-inner">
+				<form action="#" class="login" method="login">
+					<div class="field">
+						<input type="text" name="emailadd" placeholder="Email Address" required>
+					</div>
+					<div class="field">
+						<input type="password" name="password" placeholder="Password" required>
+					</div>
+					<div class="pass-link">
+						<a href="#">Forgot password?</a>
+					</div>
+					<div class="field btn">
+						<div class="btn-layer"></div>
+						<input type="submit" value="Login">
+					</div>
+					<div class="signup-link">
+						Not a member? <a href="">Register now</a>
+					</div>
+				</form>
+				<form name="Register" action="registration.php" method="POST" id="form" onsubmit=" return validation()">
+					<div class="field">
+						<input type="text" id="firstname" name="firstname" placeholder="First Name" value="">
+					</div>
+					<div class="field">
+						<input type="text" id="lastname" name="lastname" placeholder="Last Name" value="" minlength="2"
+							maxlength="25">
+					</div>
+					<div class="field">
+						<input type="text" id="address" name="address" placeholder=" Address" value="" minlength="2"
+							maxlength="25">
+					</div>
+					<div class="field">
+						<input type="email" id="emailaddress" name="emailaddress" placeholder="Email Address" value="">
+					</div>
+					<div class="field">
+						<input type="password" id="password" name="password" placeholder="Password" value="">
+					</div>
+					<div class="field">
+						<input type="password" id="confirmpassword" name="confirmpassword"
+							placeholder="Confirm password" value="">
+					</div>
+					<div class="field btn">
+						<div class="btn-layer"></div>
+						<input type="submit" name="Register" value="submit">
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<script src="registration.js"></script>
+	<footer align="right" style="font-size:10px; color: #fff;">&copy; 2022| Login and Registration Form _Jorge |
+		0948-987-8397 |</footer>
+
+</body>
+
+</html>
